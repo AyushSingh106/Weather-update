@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="w.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="search">
+                <i class="ri-map-pin-line"></i>
+                <input type="text" placeholder="ENTER YOUR LOCATION" id="place">
+                <button class="btn"><i class="ri-search-line"></i></button>
+            </div>
+
+            <div class="error">
+                <div class="err">
+                    <img src="404.png" alt="">
+                    <p class="error1">Invalid Place !!</p>
+                </div>
+            </div>
+            <div class="weatherbox">
+                <div class="box">
+                    <div class="info-weather">
+                        <div class="weather">
+                            <img src="rain.png" class="weather-Icon">
+                            <p class="temp">16 °C</p>
+                            <p class="city">India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="humidity">
+                        <i class='bx bx-water'></i>
+                        <div class="text">
+                            <div class="info-humidity">
+                                <span>0 %</span>
+                            </div>
+                            <p>humidity</p>
+                        </div>
+                    </div>
+
+                    <div class="wind">
+                        <i class='bx bx-wind'></i>
+                        <div class="text">
+                            <div class="info-wind">
+                                <span>0 km/h</span>
+                            </div>
+                            <p>wind speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weat_script.js"></script>
+</body>
+
+</html>

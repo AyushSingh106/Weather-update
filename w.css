@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100vw; 
+        overflow-x: hidden;
+        /* background:linear-gradient(to bottom right,rgb(181, 23, 49),rgb(224, 11, 192))  */
+        background-image: url(https://static.vecteezy.com/system/resources/previews/003/559/330/original/abstract-background-with-gradient-blue-bubble-free-vector.jpg);
+}
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    align-items: center;
+    /* background-color: rgba(173, 95, 149, 0.1);  */
+    width: 30%;
+    margin-top: -5vw;
+    border-radius: 8px;
+    backdrop-filter: blur(200px);
+    border: 2px solid rgb(244, 238, 243);
+}
+.container .search{
+    /* background-color: aqua; */
+    background: transparent;
+    display: flex;
+    /* border: hidden; */
+    align-items: center;
+    position: relative;
+    height: 4.1vw;
+    margin: 1.7vw;
+    border-radius: 6px;
+    border: 2px solid rgb(180, 118, 161);
+}
+.search #place{
+     width:100%;
+     height: 100%;
+border: hidden;
+color: white;
+     position: absolute;
+     background: transparent;
+}
+.search input{
+    padding-left: 3.5vw ;
+    font-size: 1.5vw;
+    font-weight: 600;
+    outline: none;  
+    /* background: transparent; */
+    border: 2px solid rgb(244, 238, 243);
+}
+::placeholder{
+     color: white;
+     font-weight: 400;
+}
+
+.btn{
+    position: absolute;
+    right:0;
+    width:4.5vw;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+.search i{
+    font-size: 2vw;
+    padding-left: 8px;
+    font-weight:600 ;
+    outline: none;
+}
+.weatherbox{
+    text-align: center;
+    color: white;
+    /* margin-top: 1vw; */
+    margin-bottom: 2vw;
+}
+.weather img{
+    width: 30vh;
+    height: 30vh;
+    opacity: .8;
+    border-radius: 5%;
+}
+.weather{
+    font-size: 1.8vw;
+    line-height: 1.2;
+}
+.temp{
+    position: relative;
+    margin-top: 1.5vw;
+    font-size: 3.8vw;
+    font-weight: 900;
+    margin-left: -.5vw;
+}
+.temp span{
+    position: absolute;
+    padding:4px;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+.city{
+font-size:1.4vw;
+font-weight: 300;
+text-transform: capitalize;
+}
+.details{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    line-height: 2vw;
+    margin-top: 2vw;
+    text-transform: capitalize;
+    gap: 3vw;
+}
+.humidity,.wind{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2vw;
+    font-size: 1.22vw;
+    line-height: 1.7vw;
+}
+.details span{
+    font-size: 1.8vw;
+}
+.details i{
+    font-size: 2.8vw;
+}
+ .weatherbox{ 
+     display: none;
+ }
+ .error{
+    display: none;
+ }
+ .err{
+    display: flex;
+    align-items:center;
+    justify-content: center; 
+    margin-bottom: 3vw; 
+}
+ .error img{
+    width: 30%;
+    border-radius: 50%;
+    
+ }
+ .error1{
+    text-align: left;
+    margin-left: 1.8vw;
+    color: white;
+    font-size: 2vw; 
+ }
